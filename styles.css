@@ -21,6 +21,9 @@ body {
   color: #ffffff;
   text-align: center;
   padding: 160px 30px;
+  background-image: url(images/herd.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
@@ -37,6 +40,9 @@ body {
   gap: 30px;
   align-items: start;
   padding: 50px 30px;
+  display:block;
+  width: 100%;
+  height:auto; 
 }
 
 .card {
