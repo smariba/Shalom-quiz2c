@@ -43,14 +43,18 @@ body {
   gap: 30px;
   align-items: start;
   padding: 50px 30px;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  object-position: top;
-  
+  width: 100%;
+  height: auto;
 }
 
 .card {
   background: #ffffff;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  object-position: top;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
@@ -64,14 +68,12 @@ body {
 @media screen and (max-width: 700px) {
   .cards {
     grid-template-columns: 1fr;
-    display: block;
-    width: 100%;
-    height: auto;
+    
   }
 }
 
 footer {
-  background-color: #5b4636;
+  background: linear-gradient(to right, #5b4636, #b5835a);
   color: #faf6ef;
   text-align: center;
   padding: 10px 30px;
